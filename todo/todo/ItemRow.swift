@@ -32,7 +32,7 @@ struct ItemRow: View {
     var body: some View {
         HStack {
             ItemCompletedButton(completed: $task.completed, update: {
-                TasksManager.shared.saveTask(item: task)
+                TasksManager.shared.saveTask(item: task){}
             })
 
             VStack(alignment: .leading, spacing: 4) {

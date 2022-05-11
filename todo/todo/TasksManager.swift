@@ -96,13 +96,15 @@ class TasksManager {
         }
     }
     
-    func saveTask(item: TaskItem) {
+    func saveTask(item: TaskItem, completion: @escaping()->Void) {
         self.load { lists in
             var newLists = lists.map{$0}
             if let listIndex = lists.firstIndex(where: {$0.id == item.listId}) {
                 
                     newLists[listIndex].tasks.append(item)
-                    self.storage.save(scrums: newLists, completion: {_ in})
+                    self.storage.save(scrums: newLists, completion: {_ in
+                        completion()
+                    })
             }
         }
     }

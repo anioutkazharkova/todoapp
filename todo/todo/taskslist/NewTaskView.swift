@@ -31,7 +31,10 @@ struct NewTaskView: View, IItemView {
                 
                 
                 Button(action: {
-                    self.listener?.pop()
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
+                        
+                        self.listener?.pop()
+                    }
                 }) {
                     Image(systemName: "xmark.circle.fill")
                         .font(.title3)
@@ -110,8 +113,11 @@ struct NewTaskView: View, IItemView {
             task.dueDate = date
         }
         task.priority = self.taskPriority
-        TasksManager.shared.saveTask(item: task)
-        
-        self.listener?.pop()
-    }
+        TasksManager.shared.saveTask(item: task) {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
+                
+                self.listener?.pop()
+            }
+        }
+        }
 }
