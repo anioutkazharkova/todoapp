@@ -21,7 +21,6 @@
 		1D171E5B282AD1D70059C759 /* TodoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D171E5A282AD1D70059C759 /* TodoView.swift */; };
 		1D171E5D282AD30C0059C759 /* TaskRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D171E5C282AD30B0059C759 /* TaskRow.swift */; };
 		1D171E60282AD3A30059C759 /* Date+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D171E5F282AD3A30059C759 /* Date+String.swift */; };
-		1D171E63282AD6F40059C759 /* SwiftUINavigator in Frameworks */ = {isa = PBXBuildFile; productRef = 1D171E62282AD6F40059C759 /* SwiftUINavigator */; };
 		1D171E65282AD7C60059C759 /* NewTaskList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D171E64282AD7C60059C759 /* NewTaskList.swift */; };
 		1D171E67282AD86B0059C759 /* NewTaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D171E66282AD86B0059C759 /* NewTaskView.swift */; };
 		1D171E69282AD8D10059C759 /* PriorityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D171E68282AD8D10059C759 /* PriorityView.swift */; };
@@ -57,7 +56,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1D171E63282AD6F40059C759 /* SwiftUINavigator in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -155,7 +153,6 @@
 			);
 			name = todoapp_otus;
 			packageProductDependencies = (
-				1D171E62282AD6F40059C759 /* SwiftUINavigator */,
 			);
 			productName = todoapp_otus;
 			productReference = 1D171E39282AC84A0059C759 /* todoapp_otus.app */;
@@ -186,7 +183,7 @@
 			);
 			mainGroup = 1D171E30282AC84A0059C759;
 			packageReferences = (
-				1D171E61282AD6F40059C759 /* XCRemoteSwiftPackageReference "swiftuinavigator" */,
+				1DF075AA282B775400F5CA27 /* XCRemoteSwiftPackageReference "swiftuinavigator" */,
 			);
 			productRefGroup = 1D171E3A282AC84A0059C759 /* Products */;
 			projectDirPath = "";
@@ -433,7 +430,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		1D171E61282AD6F40059C759 /* XCRemoteSwiftPackageReference "swiftuinavigator" */ = {
+		1DF075AA282B775400F5CA27 /* XCRemoteSwiftPackageReference "swiftuinavigator" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/anioutkazharkova/swiftuinavigator";
 			requirement = {
@@ -442,14 +439,6 @@
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		1D171E62282AD6F40059C759 /* SwiftUINavigator */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 1D171E61282AD6F40059C759 /* XCRemoteSwiftPackageReference "swiftuinavigator" */;
-			productName = SwiftUINavigator;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 1D171E31282AC84A0059C759 /* Project object */;
 }

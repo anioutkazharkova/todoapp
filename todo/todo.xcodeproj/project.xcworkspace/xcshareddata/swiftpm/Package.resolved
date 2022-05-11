@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "SwiftUINavigator",
+        "repositoryURL": "https://github.com/anioutkazharkova/swiftuinavigator",
+        "state": {
+          "branch": "main",
+          "revision": "6d23dcac2f3b49fb155004761833d118e8ec5d16",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}
